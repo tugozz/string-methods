@@ -507,12 +507,358 @@
 // Даалгавар 2:
 // Өгөгдсөн тоон массив дотор 100 байгаа эсэхийг шалгаад, хэрэв байвал "Байна", байхгүй бол "Байхгүй" гэж буцаа.
 
-const array = [ 101];
+// const array = [ 101];
 
 
- if (array.includes(101)) {
-    "baihgu"
+//  if (array.includes(101)) {
+//     "baihgu"
 
-}
+// }
 
-console.log(array);
+// console.log(array);
+
+// Даалгавар 3:
+// Өгөгдсөн үгийн массив дотор "JavaScript" байгаа эсэхийг шалгаад үр дүнг консолд хэвлэ.
+
+// const elements = ["Javascript", "llar", "hi"];
+
+// console.log([elements.includes("Javascript")]);
+
+
+// 17. indexOf() (Элементийн байрлалыг олох)
+
+// Даалгавар 1:
+// Өгөгдсөн массив дотор "banana" хэддүгээр индекс дээр байгааг олж буцаа.
+
+
+// const array = ["banana", "apple", "hi"];
+
+// const idx = array.indexOf(("banana"))
+
+// console.log(idx);
+
+// Даалгавар 2:
+// Өгөгдсөн массив дотор 50 тоо байвал түүний индексийг буцаа, байхгүй бол -1 гэж буцаа.
+
+// const p = [ 51, 52, 53];
+
+// const x = p.indexOf((50));
+
+// console.log(x);
+
+
+// Даалгавар 3:
+// Өгөгдсөн массив дотор "apple" хоёр удаа байвал эхний гарч ирсэн индексийг буцаа.
+
+
+// const array = ["hha", "apple", "banana"];
+
+// const chec =array.indexOf(("apple"))
+
+// console.log(chec);
+
+
+// 18. lastIndexOf() (Сүүлийн байрлалыг олох)
+
+// Даалгавар 1:
+// Өгөгдсөн массив дотор "orange" сүүлд хэддүгээр индекс дээр гарч ирснийг буцаа.
+
+// const a = ["hah", "lmao", "orange", "jj"];
+
+// const x = a.lastIndexOf(("orange"));
+
+// console.log(x);
+
+
+// Даалгавар 2:
+// Өгөгдсөн массив дотор 10 тоо сүүлд хэдэн индекс дээр байгааг олоод буцаа.
+
+// const a = [10, 2, 1, 11, 4, 6];
+
+// const b =a.lastIndexOf('10')
+
+// console.log(b);
+
+// Даалгавар 3:
+// Өгөгдсөн массив дотор "apple" олон удаа байвал хамгийн сүүлийн байрлалыг нь олж буцаа.
+
+// const names = ["apple", "banana", "apple", "hha"];
+
+// const idx = names.lastIndexOf("apple")
+
+// console.log(idx);
+
+// 19. join() (Элементийг нэгтгэн мөр болгох)
+
+// Даалгавар 1:
+// Өгөгдсөн массивын бүх элементийг " - " гэсэн тэмдэгт ашиглан нэг мөр болгон буцаа.
+
+// const names = ["apple", "alaa", "kakaka" ];
+
+// names.join(" - ");
+
+// console.log(names);
+
+
+// Даалгавар 2:
+// Өгөгдсөн массивыг join() ашиглан таслал (", ") бүхий нэг өгүүлбэр болго.
+
+// const names = ["hi", "hello", "zaazaa"];
+
+// names.join(", ")
+
+// console.log(names);
+
+// Даалгавар 3:
+// Өгөгдсөн массивын бүх элементүүдийг " | " тэмдэгтээр холбоод, мөр буцаа.
+
+// const names = ["hi", "hello", "zaazaa"];
+
+// names.join(" | ");
+
+// console.log(names);
+
+// 20. reverse() (Массивыг урвуу болгох)
+
+// Даалгавар 1:
+// Өгөгдсөн массивын бүх элементүүдийг урвуу дарааллаар эрэмбэлж буцаа.
+
+
+// const array = [1, 2, 3, 4, 5, 6, 7];
+
+// const idx = array.reverse();
+
+// console.log(idx);
+
+// Даалгавар 2:
+// Өгөгдсөн ["a", "b", "c", "d"] массивыг reverse() ашиглан буцаа.
+
+// let idx =  ["a", "b", "c", "d"];
+
+// let p = [...idx].reverse()
+
+// console.log(idx);
+
+
+// Даалгавар 3:
+// Өгөгдсөн тоон массивыг урвуу эрэмбэлж буцаа.
+
+// let idx = [1, 2, 4, 5, 6, 8];
+
+// let p = [...idx].reverse()
+
+// console.log(p);
+
+// 21. fill() (Массивын элементийг шинэ утгаар дүүргэх)
+
+// Даалгавар 1:
+// Хоосон массив үүсгээд fill() ашиглан "A" үсгээр бүх элементийг дүүргээд буцаа.
+
+// const too = [];
+
+// too.fill('a');
+
+// console.log(too);
+
+// Даалгавар 2:
+// Өгөгдсөн 10 элементийн массивын эхний 5-ыг "X" үсгээр дүүргэ.
+
+// const element = [1,2,3,4,5,6,7,8,9,10];
+
+// element.fill('a', 0, 4);
+
+// console.log(element);
+
+
+// Даалгавар 3:
+// Өгөгдсөн тоон массивын сүүлийн 3 элементийг 0 болгож солиод шинэ массив буцаа.
+
+// const too = [1, 2, 4, 5, 6 , 7, 8,9];
+
+// too.fill('0', 5,8);
+
+// console.log(too);
+
+// 22. flat() (Олон давхар массивыг нэг түвшин болгох)
+
+// Даалгавар 1:
+// Өгөгдсөн [1, [2, [3, [4, 5]]]] массивыг нэг түвшин болгож буцаа.
+
+// const too = [1, [2, [3, [4, 5]]]];
+
+// const res = too.flat(3);
+
+// console.log(res);
+
+
+
+// Даалгавар 2:
+// Олон давхар массив ([[1, 2], [3, 4], [5, [6, 7]]]) -ыг нэг түвшин болгон flat() ашиглан буцаа.
+
+// const too = [
+//   [1, 2],
+//   [3, 4],
+//   [5, [6, 7]],
+// ];
+
+// const array = too.flat(3);
+
+// console.log(array);
+
+// Даалгавар 3:
+// Өгөгдсөн массив дотор 3 түвшинтэй дэд массив байвал flat(2) ашиглан хоёр давхарга тайлж буцаа.
+
+
+// const too = [
+//   [1, 2],
+//   [3, 4],
+//   [5, [6, 7]],
+// ];
+
+// const res = too.flat(2)
+
+// console.log(res);
+
+// 23. flatMap() (Нэгтгэх ба хувиргах)
+
+// Даалгавар 1:
+// Өгөгдсөн массив дотор "a b" гэсэн үг байгаа бол flatMap() ашиглан "a" болон "b" болгон хувиргаад шинэ массив буцаа.
+
+
+
+// const array = ["a b", "c", "d"];
+// const result = array.flatMap(item => item.split(' '));
+// console.log(result);
+
+
+// Даалгавар 2:
+// Өгөгдсөн массив дотор ["one", "two three"] байгаа бол flatMap() ашиглан "one", "two", "three" болгон хувирга.
+
+// const too = ["one", "two three"];
+
+// const result = too.flatMap(item => item.split(" "));
+
+// console.log(result);
+
+// Даалгавар 3:
+// Объект массив дотор "name": "Ариун" байгаа бол flatMap() ашиглан "Ариун" гэсэн шинэ массив үүсгэ.
+
+
+// const too = ["name", "Ариун"];
+
+// const result = too.flatMap(item => item.split(" - "))
+
+// console.log(result);
+
+
+// 24. copyWithin() (Массив дотор хуулж зөөх)
+
+// Даалгавар 1:
+// Өгөгдсөн [1, 2, 3, 4, 5] массивын 0-р индексээс эхлэн 3-р индекстэй элементийг хуулж зөө.
+
+
+
+// const too = [1, 2, 3, 4, 5];
+
+// too.copyWithin(0, 3);
+
+// console.log(too);
+
+
+// Даалгавар 2:
+// Өгөгдсөн [10, 20, 30, 40, 50]
+//  массивын 2-р индекстээс эхлэн 4-р индексийн элементүүдийг 0-р индекс рүү зөө.
+
+// const too = [10, 20, 30, 40, 50];
+
+// too.copyWithin(0, 2, 5 );
+
+// console.log(too);
+
+// const too = [10, 20, 30, 40, 50];
+
+// // First perform the copyWithin operation
+// too.copyWithin(2, 4);
+// // Now the array is [10, 20, 50, 40, 50]
+
+// // Then fill the last three positions with 0
+// too.fill(0, 2, 5);
+// // This fills positions 2, 3, and 4 with 0
+
+// console.log(too);
+
+
+// const too = [10, 20, 30, 40, 50];
+// too.fill(0, 2, 5); // Fill positions 2 through 4 with 0
+// console.log(too); // [10, 20, 0, 0, 0]
+
+// Даалгавар 3:
+// Өгөгдсөн массив дотор 2-оос 4 дэх элементийг 1-р индекст байрлуул.
+
+
+// 25. toSorted() (Массивыг эрэмбэлэх - sort() хувилбар)
+
+// Даалгавар 1:
+// Өгөгдсөн [3, 1, 4, 1, 5, 9] массивыг toSorted() ашиглан өсөх дарааллаар эрэмбэл.
+
+// const array = [3, 1, 4, 1, 5, 9];
+
+// const newArray = array.toSorted()
+
+// console.log(newArray);
+
+// Даалгавар 2:
+// Өгөгдсөн тэмдэгт мөрийн массивыг toSorted() ашиглан цагаан толгойн дарааллаар эрэмбэл.
+
+// const alpha = ["a", "f", "d", "c", "b"];
+
+// const newAlpha = alpha.toSorted();
+
+// console.log(newAlpha);
+
+// Даалгавар 3:
+// Өгөгдсөн объект массивыг toSorted() ашиглан насны өсөх дарааллаар эрэмбэл.
+
+// const too = [66, 44, 34, 24, 11, 1];
+
+// const newToo = too.toSorted();
+
+// console.log(newToo);
+
+
+// 26. toReversed() (Массивыг урвуу болгох - reverse() хувилбар)
+
+// Даалгавар 1:
+// Өгөгдсөн массивыг toReversed() ашиглан урвуу болго.
+
+// const too =[2, 3, 1, 5, 4, 7, 8];
+
+// const newToo = too.toReversed ();
+
+// console.log(newToo);
+
+
+// Даалгавар 2:
+// Өгөгдсөн тоон массивыг toReversed() ашиглан буцаа.
+
+
+// const too = [1, 2, 4, 5, 6, 7];
+
+// console.log([too.toReversed()]);
+
+// Даалгавар 3:
+// Өгөгдсөн [a, b, c, d] массивыг toReversed() ашиглан буцаа.
+
+// const too = ["a", "b", "c", "d"];
+
+// const newToo = too.toReversed()
+
+// console.log(newToo);
+
+
+// const too = ["a", "b", "c", "d"];
+// const newToo = [...too].sort().reverse();
+// console.log(newToo); // ["d", "c", "b", "a"]
+
+
+
