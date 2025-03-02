@@ -266,3 +266,253 @@
 
 // Даалгавар 2:
 // Өгөгдсөн тэмдэгт мөрийн массив дотроос 2-оос 5 дахь элементийг авах функц бич.
+
+// const too = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// const element = too.slice (2, 5);
+
+// console.log(element);
+
+// Даалгавар 3:
+// Өгөгдсөн тоон массивийн сүүлийн 3 элементийг slice() ашиглан буцаа.
+
+
+// const too = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12];
+
+// const element =too.slice(-3);
+
+// console.log(element);
+
+// 10. splice() (Массивыг өөрчлөх)
+
+// Даалгавар 1:
+// Өгөгдсөн массивийн 3 дахь элементийг устга.
+
+// const array = [1, 2,  3, 4, 5 ,6];
+
+// array.splice(2, 1);
+
+// console.log(array);
+
+
+// Даалгавар 2:
+// Өгөгдсөн массивийн 2 дахь байрлалд "шинэ" гэсэн утга оруул.
+
+// const array = [1, 2,  3, 4, 5 ,6];
+
+
+// array.splice (1, 2, "new" );
+
+// console.log(array);
+
+// Даалгавар 3:
+// Өгөгдсөн массивийн сүүлийн 2 элементийг устга.
+
+// const numbers = [1, 3, 5, 6, 7, 8, ,9 ];
+
+// numbers.splice (-3);
+
+// console.log(numbers);
+
+
+// 11. push() (Шинэ элемент нэмэх)
+
+// Даалгавар 1:
+// Өгөгдсөн массивийн төгсгөлд "шинэ" гэсэн элемент нэм.
+
+// const numbers = [ 1, 3, 5, 6 , 7 , 8,9];
+
+// numbers.push ( "new");
+
+// console.log(numbers);
+
+// Даалгавар 2:
+// Хоосон массив үүсгээд дараалан 5 элемент push() ашиглан нэм.
+
+// const numbers = [];
+
+// numbers.push(1)
+// numbers.push(2);
+// numbers.push(3);
+// numbers.push(4);
+// numbers.push(5);
+
+// console.log(numbers);
+
+
+// Даалгавар 3:
+// Өгөгдсөн массивийн төгсгөлд 3 шинэ тоо нэгэн зэрэг нэм.
+
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// numbers.push(6, 7, 8);
+
+// console.log(numbers);
+
+
+// 12. pop() (Сүүлийн элемент устгах)
+
+// Даалгавар 1:
+// Өгөгдсөн массивийн сүүлийн элементийг устга.
+
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+
+// numbers.pop(6)
+
+// console.log(numbers);
+
+// Даалгавар 2:
+// Хоосон массив дээр pop() хэрэглэхэд юу болохыг шалгаж үр дүнг буцаа.
+
+// const numbers = [];
+
+// numbers.pop (1);
+
+// console.log(numbers);
+
+
+// Даалгавар 3:
+// Массивийн бүх элементүүдийг нэг нэгээр нь pop() ашиглан устгаж, эцэст нь ямар утга гарахыг хар.
+
+
+// const numbers = [1, 2, 3];
+
+// numbers.pop (3);
+// numbers.pop (2);
+// numbers.pop (1);
+
+// console.log(numbers);
+
+// 13. shift() (Эхний элемент устгах)
+
+// Даалгавар 1:
+// Өгөгдсөн массивийн эхний элементийг устга.
+
+// const numbers = [1,2 ,3];
+
+// numbers.shift ()
+
+
+// console.log(numbers);
+
+
+// Даалгавар 2:
+// Массивийн бүх элементүүдийг нэг нэгээр нь shift() ашиглан устгаж, эцсийн үр дүнг хар.
+
+// const numbers = [1, 2, 3];
+
+// numbers.shift ()
+// numbers.shift ()
+// numbers.shift ()
+
+// console.log(numbers);
+
+
+// Даалгавар 3:
+// Хоосон массив дээр shift() хэрэглэхэд юу болохыг шалга.
+
+
+// const numbers = [];
+
+// numbers.shift ()
+
+// console.log(numbers);
+
+// 14. unshift() (Эхэнд шинэ элемент нэмэх)
+
+// Даалгавар 1:
+// Өгөгдсөн массивийн эхэнд "шинэ" гэсэн элемент нэм.
+
+// const numbers = [1, 2, 3, 4];
+
+// numbers.unshift ("new")
+
+// console.log(numbers);
+
+// Даалгавар 2:
+// Хоосон массив үүсгээд дараалан 5 элемент unshift() ашиглан нэм.
+
+
+// const numbers = []
+
+// numbers.unshift (1)
+// numbers.unshift(1);
+// numbers.unshift(1);
+// numbers.unshift(1);
+// numbers.unshift(1);
+
+// console.log(numbers);
+
+
+// Даалгавар 3:
+// Өгөгдсөн массивийн эхэнд 3 шинэ тоо нэгэн зэрэг нэм.
+
+
+// const numbers = [1, 2, 3,4];
+
+// numbers.unshift(5, 6, 7);
+
+// console.log(numbers);
+
+// 15. concat() (Массив нэгтгэх)
+
+// Даалгавар 1:
+// Өгөгдсөн хоёр массивыг concat() ашиглан нэг массив болгож буцаа.
+
+// const numbers = [1, 2,3];
+
+// const too = [4, 5, 6]
+
+// const c = numbers.concat(too);
+
+// console.log(c);
+
+
+// Даалгавар 2:
+// Өгөгдсөн массив дээр нэмэлт элементүүд агуулсан массив нэмэн шинэ массив үүсгэ.
+
+// const a = [1, 2, 3];
+
+// const b = a.concat(4, 5, 6);
+
+// console.log(b);
+
+
+// Даалгавар 3:
+// Гурван өөр массивийг concat() ашиглан нэг массив болго.
+
+
+// const a = [1, 2];
+// const b = [3,4];
+// const c = [5, 6];
+
+// const x = a.concat(b + c);
+
+// console.log(x);
+
+
+// 16. includes() (Элемент байгаа эсэхийг шалгах)
+
+// Даалгавар 1:
+// Өгөгдсөн массив дотор "apple" байгаа эсэхийг includes() ашиглан шалга.
+
+// const array = ["apple", "banana", "cider"];
+
+// const x = array.includes("apple");
+
+// console.log(x);
+
+// Даалгавар 2:
+// Өгөгдсөн тоон массив дотор 100 байгаа эсэхийг шалгаад, хэрэв байвал "Байна", байхгүй бол "Байхгүй" гэж буцаа.
+
+const array = [ 101];
+
+
+ if (array.includes(101)) {
+    "baihgu"
+
+}
+
+console.log(array);
